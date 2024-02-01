@@ -16,7 +16,7 @@ const BookingForm = ({ movieName, onSubmit, movieimg }) => {
   return (
     <div className="flex flex-col bg-white p-4 rounded-md w-full sm:w-4/5 md:flex-row md:w-1/2">
       <img
-        className="rounded-lg mb-4 sm:w-1/2 md:mr-4 md:mb-0 md:w-1/3 lg:w-1/4"
+        className="rounded-lg aspect-[3/2] object-contain mx-10 sm:w-1/2 md:mr-4 md:mb-0 md:w-1/3 lg:w-1/4"
         src={movieimg}
         alt=""
       />

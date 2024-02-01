@@ -39,7 +39,7 @@ const ShowDetails = () => {
     <div className="flex justify-center items-center h-screen">
       {showDetails ? (
         <div className="w-full sm:w-4/5 md:w-3/4 lg:w-1/2 p-4">
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col gap-5 md:flex-row items-center">
             {showDetails.image && showDetails.image.medium && (
               <img
                 className="rounded-lg mb-4 sm:w-full md:w-1/3 lg:w-1/4"
