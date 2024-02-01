@@ -8,7 +8,6 @@ const Shows = () => {
     try {
       const data = await fetch("https://api.tvmaze.com/search/shows?q=all");
       const response = await data.json();
-      console.log(response);
       setApiData(response);
     } catch (error) {
       console.error("Error fetching data:", error);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const BookingForm = ({ movieName, onSubmit }) => {
+const BookingForm = ({ movieName, onSubmit, movieimg }) => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
 
@@ -14,15 +14,21 @@ const BookingForm = ({ movieName, onSubmit }) => {
   };
 
   return (
-    <div className="bg-white p-4 rounded-md w-full md:w-1/2">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-semibold">Book Movie Ticket</h2>
-        <i
-          onClick={handleFormSubmit}
-          className="rounded-lg px-2 py-2 bg-gray-600 text-gray-100 hover:bg-gray-700 duration-300 mx-4 ri-close-fill cursor-pointer"
-        />
-      </div>
-      <form onSubmit={handleFormSubmit}>
+    <div className="flex flex-col bg-white p-4 rounded-md w-full sm:w-4/5 md:flex-row md:w-1/2">
+      <img
+        className="rounded-lg mb-4 sm:w-1/2 md:mr-4 md:mb-0 md:w-1/3 lg:w-1/4"
+        src={movieimg}
+        alt=""
+      />
+
+      <form className="w-full">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-2xl font-semibold">Book Movie Ticket</h2>
+          <i
+            onClick={handleFormSubmit}
+            className="rounded-lg px-2 py-2 bg-gray-600 text-gray-100 hover:bg-gray-700 duration-300 mx-4 ri-close-fill cursor-pointer"
+          />
+        </div>
         <div className="mb-3">
           <label className="block text-sm font-medium text-gray-600">
             Movie Name:

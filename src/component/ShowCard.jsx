@@ -8,7 +8,6 @@ const ShowCard = ({ id, name, image, rating, genres, premiered }) => {
   const navigate = useNavigate();
 
   const handleSummaryClick = () => {
-    // Use navigate to change the route
     navigate(`/show/${id}`);
   };
   return (
